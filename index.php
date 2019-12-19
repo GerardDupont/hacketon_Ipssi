@@ -27,7 +27,6 @@
   </nav>
 
 
-
   <div class="banner6 py-5">
     <!-- Row  -->
     <div class="row">
@@ -35,7 +34,7 @@
         <div class="col-lg-12 align-justify-center pr-4 pl-0 contact-form">
           <div class="">
             <h2 class="mb-3 font-weight-light">Partiper au Hackaton !</h2>
-                     <h6 class="subtitle font-weight-normal">Renseignez vos informations ci dessous.</h6>
+               <h6 class="subtitle font-weight-normal">Renseignez vos informations ci dessous.</h6>
             <form class="mt-3">
               <div class="row">
                 <div class="col-lg-12">
@@ -45,7 +44,7 @@
                 </div>
                 <div class="col-lg-12">
                   <div class="form-group">
-                                     <input class="form-control" type="text" placeholder="Ton prénom">
+                     <input class="form-control" type="text" placeholder="Ton prénom">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -53,14 +52,9 @@
                     <input class="form-control" type="email" placeholder="Ton email">
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                   <div class="form-group">
-                    <input class="form-control" type="password" placeholder="Mot de passe">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input class="form-control" type="password" placeholder="Confirmer le mot de passe">
+                    <input class="form-control" type="text" placeholder="Ta promotion">
                   </div>
                 </div>
                 <div class="col-lg-12">
@@ -68,11 +62,6 @@
                 </div>
               </div>
             </form>
-            <div class="row">
-              <div class="col-lg-12 text-center mt-4">
-                            Déja un compte? <a href="#">Connexion</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -194,6 +183,9 @@
       </div>
     </footer>
   </div>
+
+
+
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
