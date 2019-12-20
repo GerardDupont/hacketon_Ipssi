@@ -25,11 +25,19 @@ function getAllUser(){
     return $peoples;
 }
 
+/**
+ * find all the groups that already exist
+ */
 function getAllGroup(){
     
 }
 
-function getUserFromGroup($group){
+/** 
+ * Return all the people of a $group 
+ * @param string $group
+ * @return people[]
+ */
+function getPeopleFromGroup($group){
     $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE deleted=0 AND group = $group");
     $peoples = array();
     foreach($res as $datapeople){
@@ -39,6 +47,16 @@ function getUserFromGroup($group){
     }
     return $peoples;
     
+}
+
+/**
+ * This function permit to know if somebody can be added to a groupe
+ * @param string $group
+ * @return boolean
+ */
+function isThisGroupFull($group){
+    $peoples = getUserFromGroup($group);
+    return count($peoples)<6;
 }
 
 
