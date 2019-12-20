@@ -15,7 +15,7 @@ function createEmptyPoeple(){
 
 
 function getAllUser(){
-    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM user WHERE deleted=0");
+    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE deleted=0");
     $peoples = array();
     foreach($res as $datapeople){
         $temp = new people();
@@ -38,7 +38,7 @@ function getAllGroup(){
  * @return people[]
  */
 function getPeopleFromGroup($group){
-    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM user WHERE deleted=0 AND group = $group");
+    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE deleted=0 AND group = $group");
     $peoples = array();
     foreach($res as $datapeople){
         $temp = new people();
