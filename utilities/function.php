@@ -71,7 +71,7 @@ function getPeopleFromGroup($group){
  */
 function isThisGroupFull($group){
     $peoples = getUserFromGroup($group);
-    return count($peoples)<6;
+    return count($peoples)>5;
 }
 
 
