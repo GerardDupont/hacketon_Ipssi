@@ -1,0 +1,94 @@
+.banner6 {
+    font-family: "Montserrat", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+    overflow: hidden;
+    position: relative;
+
+
+    .contact-form{ 
+
+        
+
+
+
+    }
+
+
+    .participate-button{ 
+
+
+        background-color:#2c3e50;
+
+
+    }
+
+    .banner6 h1, .banner6 h2, .banner6 h3, .banner6 h4, .banner6 h5, .banner6 h6 {
+        color: #3e4555;
+      }
+
+
+      .subtitle {
+        color: #8d97ad;
+        line-height: 24px;
+      }
+
+
+      a {
+        text-decoration: none;
+      }
+
+      .btn-md {
+        padding: 15px 45px;
+        font-size: 16px;
+      }
+
+      .bg-facebook {
+        background-color: #3b5a9a;
+      }
+
+      .bg-twitter {
+        background-color: #56adf2;
+      }
+
+
+      .text-danger {
+        color: #ff4d7e !important;
+      }
+
+
+      .right-image {
+        background-position: center bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+      }
+      
+  }
+  
+ 
+  
+  @media (max-width: 1023px) {
+    .banner6 .contact-form {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .banner6 .contact-form {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  
+  @media (max-width: 1023px) {
+    .banner6 .right-image {
+      position: relative;
+      bottom: -95px;
+    }
+  }
+  
