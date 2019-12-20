@@ -152,54 +152,6 @@
     </div>
   </div>
 
-
-
-
-
-
-  <div class="container mt-5 mb-5">
-    <div class="row">
-      <div class="col-lg-12">
-        <h3 class="text-left font-weight-bold mb-4">Liste des participants :</h3>
-        <div class="main-box clearfix">
-          <div class="table-responsive">
-            <table class="table user-list">
-              <thead>
-                <tr>
-                  <th><span>Nom et fillière</span></th>
-                  <th class="text-center"><span>Projet</span></th>
-                  <th><span>Email</span></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <img src="https://randomuser.me/api/portraits/lego/0.jpg" alt="">
-                    <a href="#" class="user-link"><?= "Jean Kevin" ?></a>
-                    <span class="user-subhead"><?= "Nom de la filiere" ?></span>
-                  </td>
-
-                  <td class="text-center">
-                    <span class="label label-default"><?= "Projet X" ?></span>
-                  </td>
-                  <td>
-                    <a href="#"> <?= "Jean-Kevin@hotmail.fr" ?> </a>
-                  </td>
-
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-
   <div class="footer-dark">
     <footer>
       <div class="container">
