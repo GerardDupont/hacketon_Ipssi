@@ -33,7 +33,7 @@
       <div class="container">
         <div class="col-lg-12 align-justify-center pr-4 pl-0 contact-form">
           <div class="">
-            <h2 class="mb-3 font-weight-light">Partiper au Hackaton !</h2>
+            <h2 class="mb-3 font-weight-light">Participer au Hackaton !</h2>
                <h6 class="subtitle font-weight-normal">Renseignez vos informations ci dessous.</h6>
             <form class="mt-3">
               <div class="row">
@@ -119,6 +119,44 @@
   </div>
 
 
+
+  <div class="user-box">
+    <div class="container">
+      <div class="intro row">
+        <h2 class="text-center">Liste des participants :</h2>
+      </div>
+      <div class="row justify-content-center features">
+        <div class="col-sm-6 col-md-5 col-lg-4 item">
+          <div class="box">
+            <h3 class="name mb-3"><?= "Jean Kevin" ?></h3>
+            <h4 class="name text-left font-weight-normal"><?= "Architecture web et big data" ?></h4>
+            <p class="description text-left">Le rejoindre :</p>
+            <form action="">
+            <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Ton nom">
+            </div>
+            <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Ton prenom">
+            </div>
+            <div class="form-group">
+                    <input class="form-control" type="email" placeholder="Ton email">
+            </div>
+            <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Ta promo">
+            </div>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
   <div class="container mt-5 mb-5">
     <div class="row">
       <div class="col-lg-12">
@@ -129,7 +167,6 @@
               <thead>
                 <tr>
                   <th><span>Nom et fillière</span></th>
-
                   <th class="text-center"><span>Projet</span></th>
                   <th><span>Email</span></th>
                 </tr>
