@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Untitled</title>
+  <title>Hackaton Ipssi</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -17,9 +17,8 @@
       <div class="collapse navbar-collapse" id="navcol-1">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item" role="presentation"><a class="nav-link" href="#">Participer</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Informations</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Participants</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Mon profil</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#information">Informations</a></li>
+          <li class="nav-item" role="presentation"><a class="nav-link" href="#participant">Participants</a></li>
           </li>
         </ul>
       </div>
@@ -58,6 +57,11 @@
                   </div>
                 </div>
                 <div class="col-lg-12">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Le nom de ton groupe">
+                  </div>
+                </div>
+                <div class="col-lg-12">
                                  <button type="submit" class="btn btn-md btn-block text-white border-0 bg-dark participate-button"><span>Participer</span></button>
                 </div>
               </div>
@@ -70,8 +74,8 @@
 
 
 
-  <div class="highlight-phone">
-    <div class="container">
+  <div id="information" class="highlight-phone">
+    <div class="container"id="information">
       <div class="row">
         <div class="col-md-8">
           <div class="intro">
@@ -120,7 +124,7 @@
 
 
 
-  <div class="user-box">
+  <div id="participant" class="user-box">
     <div class="container">
       <div class="intro row">
         <h2 class="text-center">Liste des participants :</h2>
@@ -128,9 +132,10 @@
       <div class="row justify-content-center features">
         <div class="col-sm-6 col-md-5 col-lg-4 item">
           <div class="box">
-            <h3 class="name mb-3"><?= "Jean Kevin" ?></h3>
+            <h3 class="name mb-3 text-left"><?= "Jean Kevin"?></h3>
             <h4 class="name text-left font-weight-normal"><?= "Architecture web et big data" ?></h4>
-            <p class="description text-left">Le rejoindre :</p>
+            <h4 class="name text-left font-weight-normal"><?= "Nom du groupe" ?></h4>
+            <!-- <p class="description text-left">Le rejoindre :</p>
             <form action="">
             <div class="form-group">
                     <input class="form-control" type="text" placeholder="Ton nom">
@@ -144,6 +149,11 @@
             <div class="form-group">
                     <input class="form-control" type="text" placeholder="Ta promo">
             </div>
+ 
+
+            <div class="col-lg-12">
+                                 <button type="submit" class="btn btn-md btn-block text-white border-0 bg-dark participate-button"><span>Je le rejoins !</span></button>
+                </div> -->
             
             </form>
           </div>
