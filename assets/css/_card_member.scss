@@ -1,0 +1,70 @@
+.user-box {
+    color: #313437;
+    background-color: #EEF4F7;
+  }
+  
+  .user-box p {
+    color: #7d8285;
+  }
+  
+  .user-box h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit;
+  }
+  
+  @media (max-width: 767px) {
+    .user-box h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px;
+    }
+  }
+  
+  .user-box .intro {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  
+  .user-box .intro p {
+    margin-bottom: 0;
+
+  }
+  
+  .user-box .features {
+    padding: 50px 0;
+  }
+  
+  .user-box .item {
+    text-align: center;
+  }
+  
+  .user-box .item .box {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .user-box .item .icon {
+    font-size: 60px;
+    color: #1485ee;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+  
+  .user-box .item .name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 0;
+    color: inherit;
+  }
+  
+  .user-box .item .description {
+    font-size: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  
