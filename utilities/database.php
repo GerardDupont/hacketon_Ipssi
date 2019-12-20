@@ -42,14 +42,14 @@ class dataBase{
      * @throws Exception
      * @return array
      */
-    public function getUserDatasFromDB($id){
+    public function getPoepleDatasFromDB($id){
         try {
-            $req = $this->connect->prepare('SELECT * FROM `user` WHERE id = :identifiant');
+            $req = $this->connect->prepare('SELECT * FROM `people` WHERE id = :identifiant');
             $req->execute(array(
                 'identifiant'=>$id
             ));
         } catch (PDOException $e) {
-            echo 'échec de la connexion : ' . $e->getMessage();
+            echo 'echec de la connexion : ' . $e->getMessage();
             exit;
         }
         
@@ -60,86 +60,7 @@ class dataBase{
         return $resultat;
     }
     
-    
-    /**
-     * Returns the values of an specific id in the table file
-     * This values can build a file object
-     * @param int $id
-     * @throws Exception
-     * @return array()
-     */
-    public function getFileDatasFromDB($id){
-        try {
-            $req = $this->connect->prepare('SELECT * FROM `file` WHERE id = :identifiant');
-            $req->execute(array(
-                'identifiant'=>$id
-            ));
-        } catch (PDOException $e) {
-            echo '�chec de la connexion : ' . $e->getMessage();
-            exit;
-        }
-        
-        $resultat = $req->fetch();
-        if(!$resultat){
-            throw new Exception("Il y a une erreur dans la query");
-        }
-        return $resultat;
-    }
-    
-    /**
-     * Returns the values of an specific id in the table group
-     * This values can build a group object
-     * @param int $id
-     * @throws Exception
-     * @return mixed
-     */
-    
-    public function getGroupDatasFromDB($id){
-        try {
-            $req = $this->connect->prepare('SELECT * FROM  `group` WHERE id = :identifiant');
-            $req->execute(array(
-                'identifiant'=>$id
-            ));
-        } catch (PDOException $e) {
-            echo '�chec de la connexion : ' . $e->getMessage();
-            exit;
-        }
-        
-        $resultat = $req->fetch();
-        if(!$resultat){
-            throw new Exception("Il y a une erreur dans la query");
-        }
-        return $resultat;
-    }
-    
-    /**
-     * Returns the values of an specific id in the table tag
-     * This values can build a tag object
-     * @param int $id
-     * @throws Exception
-     * @return mixed
-     */
-    
-    public function getTagDatasFromDB($id){
-        $resultat = array();
-        if(!($id == 0)){
-            try {
-                $req = $this->connect->prepare('SELECT * FROM  `tag` WHERE id = :identifiant');
-                $req->execute(array(
-                    'identifiant'=>$id
-                ));
-            } catch (PDOException $e) {
-                echo 'echec de la connexion : ' . $e->getMessage();
-                exit;
-            }
-            $resultat = $req->fetch();
-            if(!$resultat){
-                 throw new Exception("Il y a une erreur dans la query");
-            }
-            
-        }
-        return $resultat;
-    }
+   
     /**
      * Make an update query 
      * @param String $query
