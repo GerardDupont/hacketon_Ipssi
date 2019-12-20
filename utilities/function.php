@@ -14,7 +14,11 @@ function createEmptyPoeple(){
 }
 
 
-function getAllUser(){
+/**
+ * return all the people
+ * @return people[]
+ */
+function getAllPeople(){
     $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE deleted=0");
     $peoples = array();
     foreach($res as $datapeople){
@@ -25,6 +29,17 @@ function getAllUser(){
     return $peoples;
 }
 
+/**
+ * 
+ * @param int $id
+ * @return people
+ */
+function getPeopleById($id){
+    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE id=$id");
+    $people = new people();
+    $people->setFromDataBase($res);
+    return $people;
+}
 /**
  * find all the groups that already exist
  */
@@ -56,7 +71,7 @@ function getPeopleFromGroup($group){
  */
 function isThisGroupFull($group){
     $peoples = getUserFromGroup($group);
-    return count($peoples)<6;
+    return count($peoples)>5;
 }
 
 
