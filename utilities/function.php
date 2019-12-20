@@ -14,7 +14,11 @@ function createEmptyPoeple(){
 }
 
 
-function getAllPoeple(){
+/**
+ * return all the people
+ * @return people[]
+ */
+function getAllPeople(){
     $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE deleted=0");
     $peoples = array();
     foreach($res as $datapeople){
