@@ -37,7 +37,7 @@ function getAllGroup(){
  * @param string $group
  * @return people[]
  */
-function getUserFromGroup($group){
+function getPeopleFromGroup($group){
     $res = $GLOBALS["db"]->makeQuery("SELECT * FROM user WHERE deleted=0 AND group = $group");
     $peoples = array();
     foreach($res as $datapeople){
