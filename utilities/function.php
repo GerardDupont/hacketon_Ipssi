@@ -30,6 +30,17 @@ function getAllPeople(){
 }
 
 /**
+ * 
+ * @param int $id
+ * @return people
+ */
+function getPeopleById($id){
+    $res = $GLOBALS["db"]->makeQuery("SELECT * FROM people WHERE id=$id");
+    $people = new people();
+    $people->setFromDataBase($res);
+    return $people;
+}
+/**
  * find all the groups that already exist
  */
 function getAllGroup(){
